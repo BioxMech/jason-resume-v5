@@ -1,10 +1,10 @@
 ---
-date: '2017-12-21'
-title: 'UI Engineer Co-op'
-company: 'Apple'
-location: 'Cupertino, CA'
-range: 'July - December 2017'
-url: 'https://www.apple.com/music/'
+date: "2020-12-07"
+title: "Web Developer"
+company: "Wedbio"
+location: "Indonesia, Jakarta"
+range: "December 2020 - Janurary 2021"
+url: "https://www.wedbio.com/"
 ---
 
 - Developed and shipped highly interactive web applications for Apple Music using Ember.js

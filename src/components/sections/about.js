@@ -156,7 +156,10 @@ const About = () => {
 
             <p>
               Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://www.tech.gov.sg/">a public sector agency</a>,{' '}
+              <a href="https://www.tech.gov.sg/capability-centre-dsaid">
+                a public sector agency
+              </a>
+              ,{' '}
               <a href="https://www.viki.com/">
                 a streaming platform corporation
               </a>

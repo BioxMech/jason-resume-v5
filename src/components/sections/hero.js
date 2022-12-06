@@ -64,14 +64,24 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        {/* I’m a software engineer specializing in building (and occasionally designing) exceptional
-        digital experiences. Currently, I’m focused on building accessible, human-centered products
+        I'm an aspiring software engineer, specializing in full-stack
+        development (Frontend, Backend and Infrastructure - mainly in{' '}
+        <a
+          href="https://www.credly.com/badges/3c46a6e0-342e-40f4-a585-b20796201251?source=linked_in_profile"
+          target="_blank"
+          rel="noreferrer"
+        >
+          AWS
+        </a>
+        ) Currently, I'm focused on building accessible, human-centered products
         at{' '}
-        <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
-          Upstatement
-        </a> */}
-        I'm an aspiring software engineer, specializing in full-stack development (Frontend, Backend and Infrastructure - <i>mainly in AWS</i>) 
-        Currently, I'm focused on building accessible, human-centered products as part of my growth.
+        <a
+          href="https://www.tech.gov.sg/capability-centre-dsaid"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Govtech
+        </a>
         .
       </p>
     </>

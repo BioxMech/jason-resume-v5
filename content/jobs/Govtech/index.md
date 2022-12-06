@@ -1,10 +1,10 @@
 ---
-date: '2018-05-14'
-title: 'Engineer'
-company: 'Upstatement'
-location: 'Boston, MA'
-range: 'May 2018 - Present'
-url: 'https://www.upstatement.com/'
+date: "2023-05-14"
+title: "Software Engineer"
+company: "Govtech (DSAID)"
+location: "Singapore"
+range: "Janurary 2023 - Present"
+url: "https://www.tech.gov.sg/capability-centre-dsaid"
 ---
 
 - Write modern, performant, maintainable code for a diverse array of client and internal projects
