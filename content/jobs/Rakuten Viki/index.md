@@ -7,5 +7,6 @@ range: "May - Auguest 2022"
 url: "https://www.viki.com/"
 ---
 
-- Collaborated with a small team of student designers to spearhead a new brand and design system for Scout’s inaugural student-led design conference at Northeastern
-- Worked closely with designers and management team to develop, document, and manage the conference’s marketing website using Jekyll, Sass, and JavaScript
+- Spearheaded the development of customised Datadog Application Performance Monitoring (APM) traces on Viki's key services for in-depth analysis and performance monitoring
+- Delivered knowledge sharing and transfer sessions to multiple departments on the implementation of APM traces
+- Transformed and enhanced Viki's libraries with a 30% higherefficiency in its usage

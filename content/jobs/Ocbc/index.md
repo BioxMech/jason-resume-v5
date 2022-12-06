@@ -7,7 +7,6 @@ range: "May - November 2021"
 url: "https://www.ocbc.com/group/careers/students/internships/stem.html"
 ---
 
-- Developed and shipped highly interactive web applications for Apple Music using Ember.js
-- Built and shipped the Apple Music Extension within Facebook Messenger leveraging third-party and internal APIs
-- Architected and implemented the front-end of Apple Music's embeddable web player widget, which lets users log in and listen to full songs in the browser
-- Contributed extensively to MusicKit.js, a JavaScript framework that allows developers to add an Apple Music player to their web apps
+- Created multiple Springboot endpoints for the new and improved FRANK digital bank application
+- Developed and tested multiple micro-frontends that sped up frontend development efficiency by 50% for all departments
+- Involved in the full cycle of the project phase, from scoping of the project, gathering requirements, design, coding & implementation, UAT/Unit Testing and documentation
