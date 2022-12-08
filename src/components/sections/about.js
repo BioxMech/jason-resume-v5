@@ -45,6 +45,32 @@ const StyledText = styled.div`
       }
     }
   }
+
+  ul.certifications-list {
+    display: grid;
+    grid-gap: 0 10px;
+    padding: 0;
+    margin: 20px 0 0 0;
+    overflow: hidden;
+    list-style: none;
+
+    li {
+      position: relative;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      font-family: var(--font-mono);
+      font-size: var(--fz-xs);
+
+      &:before {
+        content: "→";
+        position: absolute;
+        left: 0;
+        color: var(--green);
+        font-size: var(--fz-sm);
+        line-height: 12px;
+      }
+    }
+  }
 `;
 const StyledPic = styled.div`
   position: relative;
@@ -165,8 +191,7 @@ const About = () => {
               the Frontend, Backend and Infrastructure development. I started
               back in 2019 when I decided to try building websites using HTML
               &amp; CSS. I practically built a e-commerce website — turns out
-              hacking together a custom payment page taught me a lot about HTML
-              & CSS!
+              hacking together a custom payment page taught me a lot!
             </p>
 
             <p>
@@ -192,15 +217,17 @@ const About = () => {
             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
           </ul>
 
-          {/* <div> */}
-          <p>Here are my certifications:</p>
-          {/* </div> */}
+          <div style={{ marginTop: '20px' }}>
+            Also, I am certified in these:
+          </div>
 
-          <ul className="skills-list">
+          <ul className="certifications-list">
             {certifications &&
               certifications.map((certification, i) => (
                 <li key={i}>
-                  <a href={certification.link}>{certification.name}</a>
+                  <p>
+                    <a href={certification.link}>{certification.name}</a>
+                  </p>
                 </li>
               ))}
           </ul>
