@@ -137,6 +137,21 @@ const About = () => {
     'AWS',
   ];
 
+  const certifications = [
+    {
+      name: 'AWS Solution Architecture',
+      link: 'https://www.credly.com/badges/3c46a6e0-342e-40f4-a585-b20796201251?source=linked_in_profile',
+    },
+    {
+      name: 'AWS Cloud Practicitioner',
+      link: 'https://www.credly.com/badges/74ba73a5-9ab7-43bb-a706-f1d6644cce91/linked_in_profile',
+    },
+    {
+      name: 'Java Foundation Associate',
+      link: 'https://www.credly.com/badges/5377cdc8-f4ae-4ecc-8bd2-af193589073a',
+    },
+  ];
+
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
       <h2 className="numbered-heading">About Me</h2>
@@ -175,6 +190,19 @@ const About = () => {
 
           <ul className="skills-list">
             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
+          </ul>
+
+          {/* <div> */}
+          <p>Here are my certifications:</p>
+          {/* </div> */}
+
+          <ul className="skills-list">
+            {certifications &&
+              certifications.map((certification, i) => (
+                <li key={i}>
+                  <a href={certification.link}>{certification.name}</a>
+                </li>
+              ))}
           </ul>
         </StyledText>
 

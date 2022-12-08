@@ -138,7 +138,7 @@ const StyledProject = styled.li`
         position: static;
 
         &:before {
-          content: '';
+          content: "";
           display: block;
           position: absolute;
           z-index: 0;
@@ -273,7 +273,7 @@ const StyledProject = styled.li`
       }
 
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         height: 100%;
@@ -316,7 +316,11 @@ const Featured = () => {
               title
               cover {
                 childImageSharp {
-                  gatsbyImageData(width: 700, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+                  gatsbyImageData(
+                    width: 700
+                    placeholder: BLURRED
+                    formats: [AUTO, WEBP, AVIF]
+                  )
                 }
               }
               tech
@@ -342,7 +346,9 @@ const Featured = () => {
     }
 
     sr.reveal(revealTitle.current, srConfig());
-    revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
+    revealProjects.current.forEach((ref, i) =>
+      sr.reveal(ref, srConfig(i * 100)),
+    );
   }, []);
 
   return (
@@ -359,7 +365,10 @@ const Featured = () => {
             const image = getImage(cover);
 
             return (
-              <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
+              <StyledProject
+                key={i}
+                ref={el => (revealProjects.current[i] = el)}
+              >
                 <div className="project-content">
                   <div>
                     <p className="project-overline">Featured Project</p>
@@ -393,7 +402,11 @@ const Featured = () => {
                         </a>
                       )}
                       {external && !cta && (
-                        <a href={external} aria-label="External Link" className="external">
+                        <a
+                          href={external}
+                          aria-label="External Link"
+                          className="external"
+                        >
                           <Icon name="External" />
                         </a>
                       )}
@@ -403,6 +416,12 @@ const Featured = () => {
 
                 <div className="project-image">
                   <a href={external ? external : github ? github : '#'}>
+                    {/* {
+                      image === "gif" ?
+                        <img src={image} alt={title} className="img" />
+                      :
+                        <GatsbyImage image={image} alt={title} className="img" />
+                    } */}
                     <GatsbyImage image={image} alt={title} className="img" />
                   </a>
                 </div>
