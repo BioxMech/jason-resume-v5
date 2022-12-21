@@ -1,12 +1,13 @@
 ---
 date: "2"
 title: "FreeBird"
-cover: "./demo.png"
+cover: "./cover.jpg"
 github: "https://github.com/BioxMech/freebirds"
-# external: 'https://spotify-profile.herokuapp.com/'
+# external: ''
+# cta: '' // learn button
 tech:
   - React
-  - Material-zUI
+  - Material-UI
   - NodeJS
   - Express
   - Apollo GraphQL

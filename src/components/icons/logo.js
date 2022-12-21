@@ -1,5 +1,8 @@
 import React from 'react';
 
+// Get help from here
+// https://danmarshall.github.io/google-font-to-svg-path/
+// https://github.com/danmarshall/google-font-to-svg-path/blob/master/opentype.js
 const IconLogo = () => (
   <svg
     id="logo"

@@ -1,7 +1,7 @@
 ---
 date: "1"
 title: "Embrace"
-cover: "./demo.png"
+cover: "./cover.png"
 github: "https://github.com/BioxMech/embrace"
 external: "https://embrace-b75f7.web.app/"
 tech:

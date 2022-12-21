@@ -7,7 +7,7 @@ tech:
   - Antd
   - Netlify
   - SASS
-showInProjects: true
+showInProjects: false
 ---
 
 First big project that aims to be sleek and innovative online alteration and tailoring services provided for all users (Both Sellers and Buyers) who wants to engage in such activity.

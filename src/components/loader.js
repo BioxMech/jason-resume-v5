@@ -76,7 +76,7 @@ const Loader = ({ finishLoading }) => {
   };
 
   useEffect(() => {
-    const timeout = setTimeout(() => setIsMounted(true), 5);
+    const timeout = setTimeout(() => setIsMounted(true), 3);
     animate();
     return () => clearTimeout(timeout);
   }, []);
@@ -88,6 +88,7 @@ const Loader = ({ finishLoading }) => {
       <div className="logo-wrapper">
         <IconLoader />
       </div>
+      <div className="logo-wrapper">Welcome</div>
     </StyledLoader>
   );
 };

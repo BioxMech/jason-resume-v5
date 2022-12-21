@@ -143,7 +143,9 @@ const ArchivePage = ({ location, data }) => {
 
     sr.reveal(revealTitle.current, srConfig());
     sr.reveal(revealTable.current, srConfig(200, 0));
-    revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 10)));
+    revealProjects.current.forEach((ref, i) =>
+      sr.reveal(ref, srConfig(i * 10)),
+    );
   }, []);
 
   return (
@@ -174,15 +176,17 @@ const ArchivePage = ({ location, data }) => {
                     date,
                     github,
                     external,
-                    ios,
-                    android,
+                    // ios,
+                    // android,
                     title,
                     tech,
                     company,
                   } = node.frontmatter;
                   return (
                     <tr key={i} ref={el => (revealProjects.current[i] = el)}>
-                      <td className="overline year">{`${new Date(date).getFullYear()}`}</td>
+                      <td className="overline year">{`${new Date(
+                        date,
+                      ).getFullYear()}`}</td>
 
                       <td className="title">{title}</td>
 
@@ -196,7 +200,9 @@ const ArchivePage = ({ location, data }) => {
                             <span key={i}>
                               {item}
                               {''}
-                              {i !== tech.length - 1 && <span className="separator">&middot;</span>}
+                              {i !== tech.length - 1 && (
+                                <span className="separator">&middot;</span>
+                              )}
                             </span>
                           ))}
                       </td>
@@ -213,7 +219,7 @@ const ArchivePage = ({ location, data }) => {
                               <Icon name="GitHub" />
                             </a>
                           )}
-                          {ios && (
+                          {/* {ios && (
                             <a href={ios} aria-label="Apple App Store Link">
                               <Icon name="AppStore" />
                             </a>
@@ -222,7 +228,7 @@ const ArchivePage = ({ location, data }) => {
                             <a href={android} aria-label="Google Play Store Link">
                               <Icon name="PlayStore" />
                             </a>
-                          )}
+                          )} */}
                         </div>
                       </td>
                     </tr>
@@ -256,8 +262,6 @@ export const pageQuery = graphql`
             tech
             github
             external
-            ios
-            android
             company
           }
           html

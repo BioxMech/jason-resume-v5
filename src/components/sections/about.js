@@ -218,7 +218,7 @@ const About = () => {
           </ul>
 
           <div style={{ marginTop: '20px' }}>
-            Also, I am certified in these:
+            Also, here are my certifications:
           </div>
 
           <ul className="certifications-list">
