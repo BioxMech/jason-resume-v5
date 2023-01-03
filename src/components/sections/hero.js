@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
 // import { email } from '@config';
+import AnimatedLetters from '../animatedLetters';
 
 const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -60,14 +61,21 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Jason Chew.</h2>;
-  const three = <h3 className="big-heading">Develop apps for the web.</h3>;
+  const three = (
+    <h3 className="big-heading">
+      <AnimatedLetters
+        wordArr={['Develop', 'apps', 'for', 'the', 'web.']}
+        idx={0}
+      />
+    </h3>
+  );
   const four = (
     <>
       <p>
         I'm an aspiring software engineer, specializing in full-stack
         development (Frontend, Backend and Infrastructure - mainly in{' '}
         <a
-          href="https://www.credly.com/badges/3c46a6e0-342e-40f4-a585-b20796201251?source=linked_in_profile"
+          href="https://www.credly.com/badges/3c46a6e0-342e-40f4-a585-b20796201251"
           target="_blank"
           rel="noreferrer"
         >
@@ -89,10 +97,10 @@ const Hero = () => {
   // const five = (
   //   <a
   //     className="email-link"
-  //     href="https://www.newline.co/courses/build-a-spotify-connected-app"
+  //     href=""
   //     target="_blank"
   //     rel="noreferrer">
-  //     Check out my course!
+  //     Check out this linK!
   //   </a>
   // );
 

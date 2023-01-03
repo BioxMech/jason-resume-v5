@@ -191,7 +191,12 @@ const About = () => {
               the Frontend, Backend and Infrastructure development. I started
               back in 2019 when I decided to try building websites using HTML
               &amp; CSS. I practically built a e-commerce website — turns out
-              hacking together a custom payment page taught me a lot!
+              hacking together a custom payment page taught me a lot! Now, I am
+              a{' '}
+              <a href="https://www.linkedin.com/in/jasonchewjw/overlay/education/598637681/multiple-media-viewer/?profileId=ACoAACxxXmABB_T17Y6nItydK0PwnGA8BVVcUVI&treasuryMediaId=1635503442863">
+                2022 GIC #CodeToImpact Champion
+              </a>
+              .
             </p>
 
             <p>

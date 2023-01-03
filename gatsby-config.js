@@ -7,7 +7,7 @@ module.exports = {
       'Jason Chew is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
     siteUrl: 'https://jasoncjw.me', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
-    // twitterUsername: '@bchiang7',
+    // twitterUsername: '',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'JasonChew',
-        short_name: 'JasonChew',
+        name: 'Jason Chew',
+        short_name: 'Jason Chew',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,

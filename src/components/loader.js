@@ -34,6 +34,30 @@ const StyledLoader = styled.div`
       }
     }
   }
+
+  .ml12 {
+    font-weight: 800;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    white-space: nowrap;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    max-width: 100px;
+
+    .letter {
+      display: inline-block;
+      line-height: 1em;
+    }
+
+    // mobile
+    @media (max-width: 480px) and (min-height: 700px) {
+      font-size: 16px;
+    }
+  }
 `;
 
 const Loader = ({ finishLoading }) => {
@@ -44,11 +68,17 @@ const Loader = ({ finishLoading }) => {
       complete: () => finishLoading(),
     });
 
+    const textWrapper = document.querySelector('.ml12');
+    textWrapper.innerHTML = textWrapper.textContent.replace(
+      /\S/g,
+      '<span class=\'letter\'>$&</span>',
+    );
+
     loader
       .add({
         targets: '#logo path',
         delay: 300,
-        duration: 1500,
+        duration: 1300,
         easing: 'easeInOutQuart',
         strokeDashoffset: [anime.setDashoffset, 0],
       })
@@ -59,13 +89,33 @@ const Loader = ({ finishLoading }) => {
         opacity: 1,
       })
       .add({
-        targets: '#logo',
-        delay: 500,
-        duration: 300,
-        easing: 'easeInOutQuart',
-        opacity: 0,
-        scale: 0.1,
+        targets: '.ml12 .letter',
+        translateX: [40, 0],
+        translateZ: 0,
+        opacity: [0, 1],
+        easing: 'easeOutExpo',
+        duration: 1000,
+        delay: (el, i) => 300 + 30 * i,
       })
+      .add({
+        targets: '.ml12 .letter',
+        translateX: [0, -30],
+        opacity: [1, 0],
+        easing: 'easeInExpo',
+        duration: 300,
+        delay: (el, i) => 100 + 30 * i,
+      })
+      .add(
+        {
+          targets: '#logo',
+          delay: 300,
+          duration: 300,
+          easing: 'easeInOutQuart',
+          opacity: 0,
+          scale: 0.1,
+        },
+        '-=500',
+      )
       .add({
         targets: '.loader',
         duration: 200,
@@ -87,8 +137,8 @@ const Loader = ({ finishLoading }) => {
 
       <div className="logo-wrapper">
         <IconLoader />
+        <h2 className="ml12">Developing &nbsp; the &nbsp; future</h2>
       </div>
-      <div className="logo-wrapper">Welcome</div>
     </StyledLoader>
   );
 };

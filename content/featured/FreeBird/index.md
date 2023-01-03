@@ -10,8 +10,8 @@ tech:
   - Material-UI
   - NodeJS
   - Express
-  - Apollo GraphQL
   - MongoDB
+  - Apollo GraphQL
   - Heroku
   - Netlify
 ---
